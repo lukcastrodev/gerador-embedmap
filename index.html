@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Embed Map</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    </script>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-6">
+                <form class="form-group mt-3" id="form">
+                    <label for="searchAddress">Ginásio ou endereço completo</label>
+                    <input type="search" class="form-control" id="searchAddress" name="address" />
+                    <div class="address-btn__container d-flex justify-content-between">
+                        <button type="submit" class="btn btn-dark text-white mt-2" id="btn">Buscar</button>
+                        <button type="button" class="btn btn-danger mt-2" id="btnErase">Limpar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-6">
+                <h2 class="text-center">Preview</h2>
+                <div id="map"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <form class="form-group">
+                    <label for="embedHtml">Embed Google Maps HTML</label>
+                    <input type="text" class="form-control" id="embedHtml" disabled />
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./js/map.js"></script>
+</body>
+
+</html>
