@@ -4,7 +4,7 @@ const form = document.getElementById("form");
 
 const embedMap = (data) => {
     const params = {
-        key: 'AIzaSyCmAwU8fVLPlL5ugiK8UMIiUoslNA8cm3w',
+        key: 'SUA_CHAVE',
         place: data
     }
 
